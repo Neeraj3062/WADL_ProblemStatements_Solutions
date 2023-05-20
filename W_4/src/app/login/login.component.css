@@ -1,0 +1,11 @@
+.form-box{
+    width: 500px;
+    height: 500px;
+    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top:50%;
+    z-index: 1;
+}

@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body{
+    background: #ebe7e7;
+}
+.header {
+  background: #0f0131;
+  height: 110px;
+  color: white;
+}
+
+.row {
+  display: flex;
+
+}
+.col-l {
+  width: 50%;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.col-l span {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.col-r {
+    width: 50%;
+  padding-top: 25px;
+}
+
+.form {
+  display: flex;
+}
+
+input{
+    padding: 3px;
+    margin-top: 4px;
+}
+
+.col-r button {
+  width: 100px;
+  padding: 0px;
+  height: 20px;
+  margin: 0px;
+}
+
+.btn_submit {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form-item {
+  margin: 2px;
+  
+}
+
+
+.item_down{
+    margin-right: 60px;
+}
+
+.col-r-in span{
+    font-size: 14px;
+}
+
+.head{
+    color: black;
+
+}
+
+.col-l-content{
+    margin-left: 150px;
+    width: min-content;
+
+}
+img{
+    width: 350px;
+    margin-top: 20px;
+}
+
+.col-r p{
+    margin-top: 2px;
+
+}
+#r_content{
+    margin-left: 20px;
+}
+
+.content_form input
+{
+    padding: 8px;
+    width: 400px;
+    
+}
+
+.name{
+    display: flex;
+    width: 400px;
+    /* padding-left: 10px; */
+}
+
+.name input{
+    padding-left: 20px;
+}
+
+.sub_form_head{
+    font-size: 14px;
+}
