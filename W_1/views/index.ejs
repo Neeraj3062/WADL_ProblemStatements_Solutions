@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WADL_W1</title>
+    <style>
+      input { 
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        width: 400px;
+        margin-bottom: 10px;
+      }
+      h2{
+        font-size: 40px;
+        border-bottom: 3px solid rgb(0, 245, 114);
+        width: fit-content;
+      }
+      body{
+        margin:5% auto;
+        width: 600px;
+      }
+      button{
+        width: 400px;
+        padding: 10px;
+        margin:  5% auto;
+        font-size: 20px;
+        border: none;
+        font-weight: 700;
+        background-color: rgb(0, 245, 114);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <form method="post"  action="/addmarks" class="student-form">
+        <h2>Enter Student Marks</h2>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter Student Name"
+          required
+        />
+
+        <input
+          type="number"
+          name="rollno"
+          id="rollno"
+          placeholder="Enter Student Roll No"
+          required
+        />
+        <input
+          type="number"
+          name="wad_marks"
+          id="wad_marks"
+          placeholder="Enter Student WAD Marks"
+          required
+        />
+        <input
+          type="number"
+          name="cc_marks"
+          id="cc_marks"
+          placeholder="Enter Student CC Marks"
+          required
+        />
+        <input
+          type="number"
+          name="cns_marks"
+          id="cns_marks"
+          placeholder="Enter Student CNS Marks"
+          required
+        />
+        <input
+          type="number"
+          name="ai_marks"
+          id="ai_marks"
+          placeholder="Enter Student AI Marks"
+          required
+        />
+        <input
+          type="number"
+          name="dsbda_marks"
+          id="dsbda_marks"
+          placeholder="Enter Student Dsbda Marks"
+          required
+        />
+        <button class="btn" type="submit" >Add Student</button>
+      </form>
+    </div>
+  </body>
+</html>

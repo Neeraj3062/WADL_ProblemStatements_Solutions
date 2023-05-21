@@ -12,21 +12,24 @@ declare var $: any;
 })
 export class LoginComponent {
   login: FormGroup | any;
-  constructor(private _route: Router, private _http: HttpClient, private userService :UserService) {}
+  constructor(
+    private _route: Router,
+    private _http: HttpClient,
+    private userService: UserService
+  ) {}
   ngOnInit(): void {
-
-    if(localStorage.getItem('user')){
-      const user = JSON.parse(localStorage.getItem('user')!)
+    if (localStorage.getItem('user')) {
+      const user = JSON.parse(localStorage.getItem('user')!);
       this.userService.setCurrentUser(user);
-      this._route.navigate(['dashboard'])
+      this._route.navigate(['dashboard']);
     }
     this.login = new FormGroup({
       fname: new FormControl(),
       password: new FormControl(),
     });
     const currentUser = this.userService.getCurrentUser();
-    if(currentUser){
-        this._route.navigate(['dasboard'])
+    if (currentUser) {
+      this._route.navigate(['dasboard']);
     }
   }
 
@@ -41,7 +44,7 @@ export class LoginComponent {
           );
         });
         if (user) {
-          this.userService.setCurrentUser(user)
+          this.userService.setCurrentUser(user);
           alert('Login Success');
           this._route.navigate(['dashboard']);
           this.login.reset();
