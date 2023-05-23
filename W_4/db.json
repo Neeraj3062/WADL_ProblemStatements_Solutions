@@ -11,6 +11,18 @@
       "email": "Neeraj@gmail.com",
       "password": "Text@1234",
       "id": 2
+    },
+    {
+      "fname": "Samyak",
+      "email": "samyakjain0510@gmail.com",
+      "password": "Samyak123",
+      "id": 3
+    },
+    {
+      "fname": "sandy",
+      "email": "sanyogkalantri2007@gmail.com",
+      "password": "1234",
+      "id": 4
     }
   ]
 }

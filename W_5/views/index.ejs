@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WADL_W1</title>
+    <style>        
+      input { 
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        width: 400px;
+        margin-bottom: 10px;
+      }
+      h2{
+        font-size: 40px;
+        border-bottom: 3px solid rgb(0, 245, 114);
+        width: fit-content;
+      }
+      body{
+        margin:5% auto;
+        width: 600px;
+      }
+      button{
+        width: 400px;
+        padding: 10px;
+        margin:  5% auto;
+        font-size: 20px;
+        border: none;
+        font-weight: 700;
+        background-color: rgb(0, 245, 114);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <form method="post"  action="/addsongs" class="song-form">
+        <h2>Enter Song Details</h2>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter Song Name"
+          required
+        />
+
+        <input
+          type="text"
+          name="film"
+          id="film"
+          placeholder="Enter Film Name"
+          required
+        />
+
+        <input
+          type="text"
+          name="md"
+          id="md"
+          placeholder="Enter Music Director Name"
+          required
+        />
+        <input
+          type="text"
+          name="singer"
+          id="singer"
+          placeholder="Enter Singer Name"
+          required
+        />
+
+        <button class="btn" type="submit" >Add Song</button>
+      </form>
+    </div>
+  </body>
+</html>

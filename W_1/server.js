@@ -22,9 +22,13 @@ mongoose
     console.log(error);
   });
 
+
+
+  
 app.get("/", (req, res) => {
   res.render("index");
 });
+
 
 app.post("/addmarks", (req, res) => {
   var myData = new Student(req.body);
@@ -48,6 +52,8 @@ app.get("/getMarks", (req, res) => {
       console.log(err);
     });
 });
+
+
 
 app.get("/dsbdaGreaterThan90", (req, res) => {
   Student.find({ dsbda_marks: { $gt: 90 } })
